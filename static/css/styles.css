@@ -1,0 +1,236 @@
+@charset "utf-8";
+.header-content {
+  background: -moz-linear-gradient(top, #301e41 0%, #33676b 100%);
+  background: -webkit-linear-gradient(top, #301e41 0%, #33676b 100%);
+  background: linear-gradient(to bottom, #301e41 0%, #33676b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#301e41', endColorstr='#33676b', GradientType=0);
+  width: 100%;
+}
+.header-content .dust {
+  min-height: 100vh;
+  padding: 65px 0 75px;
+}
+.header-content .planets {
+  background: url(images/planets.svg) 55% top no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+.header-content .header-title {
+  position: relative;
+  margin: 0 auto;
+  width: 413px;
+}
+.header-content .header-title h1 {
+  background: url(images/title.svg) center top no-repeat;
+  background-size: contain;
+  height: 247px;
+  margin: 0 auto 0;
+  text-indent: -1000%;
+  width: 413px;
+}
+.header-content .header-title .subtitle {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+}
+.header-content .header-title .subtitle h2 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 16px 0 0;
+  padding: 0 13px;
+  text-align: right;
+  width: calc(100% - 156px);
+}
+.header-content .header-title .subtitle .python-logo {
+  background: url(images/python-logo.svg) center top no-repeat;
+  background-size: contain;
+  height: 141px;
+  margin-top: -50px;
+  width: 156px;
+}
+.header-content .header-invitation {
+  margin: 50px auto 0;
+  position: relative;
+  width: 288px;
+}
+.header-content .header-invitation .blue-container {
+  background: url(images/blue-container.svg) center top no-repeat;
+  background-size: contain;
+  height: 264px;
+  margin: 0 auto;
+  padding-top: 93px;
+  text-align: center;
+  width: 288px;
+}
+.header-content .header-invitation .blue-container .city {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+}
+.header-content .header-invitation .blue-container .date {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.header-content .header-invitation .blue-bars {
+  background: url(images/blue-bars.svg) center top no-repeat;
+  background-size: contain;
+  bottom: -27px;
+  height: 189px;
+  left: 50%;
+  margin: 0 auto 0 -210px;
+  position: absolute;
+  width: 420px;
+}
+@media screen and (max-width: 992px) {
+  .header-content .dust {
+    padding: 35px 0 45px;
+  }
+  .header-content .planets {
+    background-size: 100%;
+  }
+  .header-content .header-title {
+    width: 309px;
+  }
+  .header-content .header-title h1 {
+    height: 185px;
+    width: 309px;
+  }
+  .header-content .header-title .subtitle h2 {
+    font-size: 19px;
+    margin: 12px 0 0;
+    padding: 0 10px;
+    width: calc(100% - 117px);
+  }
+  .header-content .header-title .subtitle .python-logo {
+    height: 105px;
+    margin-top: -37px;
+    width: 117px;
+  }
+  .header-content .header-invitation {
+    margin: 37px auto 0;
+    width: 216px;
+  }
+  .header-content .header-invitation .blue-container {
+    height: 198px;
+    padding-top: 70px;
+    width: 216px;
+  }
+  .header-content .header-invitation .blue-container .city {
+    font-size: 19px;
+  }
+  .header-content .header-invitation .blue-container .date {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .header-content .header-invitation .blue-bars {
+    bottom: -20px;
+    height: 141px;
+    margin-left: -157px;
+    width: 315px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-content .dust {
+    padding: 25px 0;
+  }
+  .header-content .planets {
+    background: none;
+  }
+  .header-content .header-title {
+    width: 278px;
+  }
+  .header-content .header-title h1 {
+    height: 166px;
+    width: 278px;
+  }
+  .header-content .header-title .subtitle h2 {
+    font-size: 17px;
+    margin: 10px 0 0;
+    padding: 0 9px;
+    width: calc(100% - 105px);
+  }
+  .header-content .header-title .subtitle .python-logo {
+    height: 94px;
+    margin-top: -33px;
+    width: 105px;
+  }
+  .header-content .header-invitation {
+    margin: 33px auto 0;
+    width: 194px;
+  }
+  .header-content .header-invitation .blue-container {
+    height: 178px;
+    padding-top: 63px;
+    width: 194px;
+  }
+  .header-content .header-invitation .blue-container .city {
+    font-size: 19px;
+  }
+  .header-content .header-invitation .blue-container .date {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .header-content .header-invitation .blue-bars {
+    bottom: -18px;
+    height: 126px;
+    margin-left: -141px;
+    width: 283px;
+  }
+}
+/*Transitions*/
+/*Font family*/
+/*Style*/
+* {
+  font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+}
+body {
+  font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+}
+/*Bootstrap classes*/
+.container-box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  /*padding: 0 15px;*/
+}
+.row-no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.container-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.dust {
+  background: url(images/texture-complete.png) center center repeat;
+  width: 100%;
+}
+.stars-bg {
+  background: url(images/stars.svg) top center no-repeat;
+  width: 100%;
+}
+.stars-bg-complete {
+  background: url(images/stars.svg) top center repeat-x;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .dust {
+    background-size: 90%;
+  }
+  .stars-bg {
+    background-size: 90%;
+  }
+  .stars-bg-complete {
+    background: url(images/stars.svg) top center repeat;
+    background-size: 90%;
+    min-height: 100vh;
+  }
+}

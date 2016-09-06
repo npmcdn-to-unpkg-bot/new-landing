@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@import "header-content";
+@import "transitions";
+@import "variable-color";
+@import "variable-font";
+
+
+* {
+	font-family: @font-principal;
+}
+
+body {
+	font-family: @font-principal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+/*Bootstrap classes*/
+
+.container-box {
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 950px;
+	/*padding: 0 15px;*/
+}
+
+.row-no-padding {
+	[class*="col-"] {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+.container-no-padding {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+}
+
+
+.dust {
+	background: url(images/texture-complete.png) center center repeat;
+	width: 100%;
+}
+
+.stars-bg {
+	background: url(images/stars.svg) top center no-repeat;
+	width: 100%;
+}
+
+.stars-bg-complete {
+	background: url(images/stars.svg) top center repeat-x;
+	width: 100%;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 992px) {
+	.dust {
+		background-size: 90%;
+	}
+
+	.stars-bg {
+		background-size: 90%;
+	}
+
+	.stars-bg-complete {
+		background: url(images/stars.svg) top center repeat;
+		background-size: 90%;
+		min-height: 100vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
